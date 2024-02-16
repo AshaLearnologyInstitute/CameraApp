@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btCmxApi=findViewById(R.id.bt_cmx_api);
         btCmxApi.setOnClickListener(view -> {
-            Intent intent=new Intent(MainActivity.this,CameraIntentActivity.class);
+            Intent intent=new Intent(MainActivity.this,CameraApiActivity.class);
             startActivity(intent);
         });
 

@@ -63,10 +63,10 @@ public class CameraIntentActivity extends AppCompatActivity {
 
     public void startCamera(){
         String folderName="DefaultCam";
-//        File photo = FileHelper.getOutputMediaFile(getApplicationContext(),folderName,"jpg");
+        File photo = FileHelper.getOutputMediaFile(getApplicationContext(),folderName,"jpg");
 
-        File photo=getExternalCacheDir();
-        photo = new File(photo.getPath(), "FirstImg.png");
+        /*File photo=getExternalCacheDir();
+        photo = new File(photo.getPath(), "FirstImg.png");*/
 
         if(photo != null) {
             imageUri = FileProvider.getUriForFile(this, BuildConfig.APPLICATION_ID + ".provider",photo);
